@@ -24,9 +24,9 @@ class AutoShare:
 
     def process(self,post_url, caption_text):
         groups = []
-        groups = ['https://www.facebook.com/groups/bangalorestartupsnetwork/',
-                  'https://www.facebook.com/groups/delhistartupnetwork/',
-                  'https://www.facebook.com/groups/indianstartupnetwork']
+        #groups = ['https://www.facebook.com/groups/bangalorestartupsnetwork/',
+        #          'https://www.facebook.com/groups/delhistartupnetwork/',
+        #          'https://www.facebook.com/groups/indianstartupnetwork']
         time.sleep(1)
         if not groups:
             try:
