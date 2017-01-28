@@ -7,7 +7,7 @@ caption_text = raw_input("Type the caption here: ")
 
 auto = AutoShare()
 
-auto.auth(uname='sameerk18051998@gmail.com', passd='thisisfortesting')
+auto.auth(uname='', passd='')
 auto.process(post_url=post_url, caption_text=caption_text)
 
 
