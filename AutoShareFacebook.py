@@ -1,23 +1,3 @@
-'''
-MIT License
-Copyright (c) 2017 Sameer Kumar
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-'''
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -44,9 +24,10 @@ class AutoShare:
 
     def process(self,post_url, caption_text):
         groups = []
-        #groups = ['https://www.facebook.com/groups/bangalorestartupsnetwork/',
-        #          'https://www.facebook.com/groups/delhistartupnetwork/',
-        #          'https://www.facebook.com/groups/indianstartupnetwork']
+        groups = ['https://www.facebook.com/groups/bangalorestartupsnetwork/',
+                  'https://www.facebook.com/groups/delhistartupnetwork/',
+                  'https://www.facebook.com/groups/indianstartupnetwork']
+        tagx = ['delhi startup networ','bangalore startup netw', 'indian startup networ']                  
         time.sleep(1)
         if not groups:
             try:
@@ -80,7 +61,16 @@ class AutoShare:
                     actions4.send_keys(Keys.BACK_SPACE).perform()
 
                 caption = ActionChains(self.driver)
-                caption.send_keys(caption_text).perform()
+                caption.send_keys(caption_text+' ').perform()
+
+                for t in tagx:
+                    tagging = ActionChains(self.driver)
+                    tagging.send_keys(Keys.ENTER + 'Checkout '+'@'+ t).perform()
+                    time.sleep(2)
+                    #clicker_ad = ActionChains(self.driver)
+                    #clicker_ad.send_keys(Keys.ARROW_DOWN).perform()
+                    clicker_e = ActionChains(self.driver)
+                    clicker_e.send_keys(Keys.ENTER).perform()
 
                 click_post = self.driver.find_element_by_class_name("_332r")
                 click_post.click()
