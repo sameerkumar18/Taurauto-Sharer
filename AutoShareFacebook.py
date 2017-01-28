@@ -42,12 +42,20 @@ class AutoShare:
         password.send_keys(passd)
         password.send_keys(Keys.ENTER)
 
-    def process(self,post_url, caption_text):
+    def process(self,post_url, caption_text_1, caption_text_2, choice):
         groups = []
         groups = ['https://www.facebook.com/groups/bangalorestartupsnetwork/',
                   'https://www.facebook.com/groups/delhistartupnetwork/',
                   'https://www.facebook.com/groups/indianstartupnetwork']
-        tagx = ['delhi startup networ','bangalore startup netw', 'indian startup networ']                  
+        tagx = ['delhi startup networ','bangalore startup netw', 'indian startup networ']
+        #BUG here
+        dsn_groups = []
+        bsn_groups = []
+        psn_groups = []
+        msn_groups = []
+        csn_groups = []
+        isn_groups = []
+
         time.sleep(1)
         if not groups:
             try:
@@ -72,6 +80,7 @@ class AutoShare:
 
                 actions2 = ActionChains(self.driver)
                 actions2.send_keys(str(post_url) + " ").perform()
+
                 time.sleep(3)
 
 
@@ -81,7 +90,14 @@ class AutoShare:
                     actions4.send_keys(Keys.BACK_SPACE).perform()
 
                 caption = ActionChains(self.driver)
-                caption.send_keys(caption_text+' ').perform()
+                caption.send_keys(caption_text_1).perform()
+
+                if choice==2:
+                    caption_2 = ActionChains(self.driver)
+                    enter = ActionChains(self.driver)
+                    enter.send_keys(Keys.ENTER).perform()
+                    caption_2.send_keys(caption_text_2).perform()
+
 
                 for t in tagx:
                     tagging = ActionChains(self.driver)
@@ -92,9 +108,10 @@ class AutoShare:
                     clicker_e = ActionChains(self.driver)
                     clicker_e.send_keys(Keys.ENTER).perform()
 
+
                 click_post = self.driver.find_element_by_class_name("_332r")
                 click_post.click()
-                time.sleep(10)
+                time.sleep(4)
                 print "Successfully posted in " + str(i.split('https://www.facebook.com/groups/')[1].split('/')[0])
             except:
                 print"Error posting in " + str(i.split('https://www.facebook.com/groups/')[1].split('/')[0])
