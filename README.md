@@ -12,8 +12,8 @@ __Every Directory has its own README__
   Chromedriver's path might be needed to be specified like  _.....webdriver.Chrome(...,executable_path='C:....chromedriver.exe')_ depending on the kind installation done and OS.
 
 
-Feel Free to contribute :P
-I will be adding more tools soon.
+Feel Free to contribute :P<br/>
+I will be adding more tools soon.<br/>
 WARNING: Use this tool at your own risk.
 
 ## ABOUT ME
