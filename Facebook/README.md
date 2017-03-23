@@ -1,4 +1,6 @@
 # Taurauto-Sharer
+## Facebook - Auto-Share-Facebook
+Shares a single post to multiple Facebook Groups
 Example Screenshots attached at the last
 ## Installation
     pip install -r requirements.txt
