@@ -1,5 +1,5 @@
 # Taurauto-Sharer
-
+Example Screenshots attached at the last
 ## Installation
     pip install -r requirements.txt
     
@@ -17,8 +17,14 @@ Chromedriver's path might be needed to be specified like _.....webdriver.Chrome(
 Post url should start with "https ://www....." (ignore space)
 
 
-
-
 Feel Free to contribute :P
 
 WARNING: Use this tool at your own risk.
+
+
+![Screenshot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%2012.55.24%20AM.png?raw=true)
+![ScreenShot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%2012.43.27%20AM.png?raw=true)
+
+
+
+
