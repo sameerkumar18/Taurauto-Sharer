@@ -22,8 +22,8 @@ Feel Free to contribute :P
 WARNING: Use this tool at your own risk.
 
 
-![Screenshot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%2012.55.24%20AM.png?raw=true)
-![ScreenShot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%2012.43.27%20AM.png?raw=true)
+![Screenshot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%201.57.01%20AM.png?raw=true)
+![ScreenShot](https://github.com/sameerkumar18/Taurauto-Sharer/blob/master/screenshots/Screen%20Shot%202017-03-19%20at%201.56.05%20AM.png?raw=true)
 
 
 
