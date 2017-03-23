@@ -1,4 +1,4 @@
-# Auto-Share-Facebook-Groups
+# Taurauto-Sharer
 
 ## Installation
     pip install -r requirements.txt
