@@ -21,3 +21,4 @@ Post url should start with "https ://www....." (ignore space)
 
 Feel Free to contribute :P
 
+WARNING: Use this tool at your own risk.
