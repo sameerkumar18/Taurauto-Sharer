@@ -3,11 +3,11 @@
 Just a bunch of Social Media Tools :)  <br />
 Boost your posts and spread the word about your product with just a click of a button.
  
-__Every Directory has its own README___
-#### Some Common README Contents
-### Default Requirements
+__Every Directory has its own README__
+### Some Common README Contents
+#### Default Requirements
   Chrome Driver    http://chromedriver.storage.googleapis.com/index.html
-### IMP 
+#### IMP 
   ChromeDriver should be downloaded first.
   Chromedriver's path might be needed to be specified like  _.....webdriver.Chrome(...,executable_path='C:....chromedriver.exe')_ depending on the kind installation done and OS.
 
